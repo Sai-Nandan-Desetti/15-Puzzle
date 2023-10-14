@@ -95,13 +95,15 @@ public:
      */
     void moveTile(Direction dir) noexcept;
 
+    Size getNumberOfCorrectTiles() const;
+    
     /**
      * @brief Check if the game is over or not.
      * 
      * @return true: If the number of correct tiles equals the size of the board. 
      * @return false 
      */
-    bool gameOver();
+    friend bool gameOver(Board& board);
     
     /**
      * @brief Display the \c board

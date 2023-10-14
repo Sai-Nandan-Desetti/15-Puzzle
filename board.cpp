@@ -55,17 +55,18 @@ Board& Board::init(Size size)
  * - Update the coordinates of the empty tile.
  */
 void Board::moveTile(Direction dir) noexcept
-{    
-    Point nextPoint{ m_emptyPoint.getAdjacentPoint(dir) };       
+{   
+    // find the adjacent point in the opposite direction 
+    Point nextPoint{ m_emptyPoint.getAdjacentPoint(-dir) };       
     try
     {        
-        bool checkEmpty{ (*this)[m_emptyPoint].inCorrectPosition() };
-        bool checkNext{ (*this)[nextPoint].inCorrectPosition() };
+        bool checkEmpty{ (*this)[m_emptyPoint].isCorrectPosition() };
+        bool checkNext{ (*this)[nextPoint].isCorrectPosition() };
 
         swapTiles((*this)[nextPoint], (*this)[m_emptyPoint]);
 
-        m_numCorrectTiles += (*this)[m_emptyPoint].inCorrectPosition() ? 1 : (-1 * checkEmpty);
-        m_numCorrectTiles += (*this)[nextPoint].inCorrectPosition() ? 1 : (-1 * checkNext);
+        m_numCorrectTiles += (*this)[m_emptyPoint].isCorrectPosition() ? 1 : (-1 * checkEmpty);
+        m_numCorrectTiles += (*this)[nextPoint].isCorrectPosition() ? 1 : (-1 * checkNext);
         
         m_emptyPoint = std::move(nextPoint);
     }
@@ -76,9 +77,14 @@ void Board::moveTile(Direction dir) noexcept
     }    
 }
 
-bool Board::gameOver()
+Board::Size Board::getNumberOfCorrectTiles() const
+{
+    return m_numCorrectTiles;
+}
+
+bool gameOver(Board& board)
 {    
-    return m_numCorrectTiles == m_size * m_size;
+    return board.m_numCorrectTiles == board.m_size * board.m_size;
 }
 
 std::ostream& operator<<(std::ostream& out, const Board& board)

@@ -47,5 +47,5 @@ std::ostream& operator<<(std::ostream& out, Direction dir)
 
 Direction getRandomDirection()
 {
-    return static_cast<Direction>(Random::get(0, +max_directions));
+    return static_cast<Direction>(Random::get(0, +max_directions - 1));
 }

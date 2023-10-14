@@ -15,7 +15,7 @@ Tile::operator bool() const
     return m_num != 0;
 }
 
-bool Tile::inCorrectPosition() const
+bool Tile::isCorrectPosition() const
 {
     return m_num == m_correctNum;
 }

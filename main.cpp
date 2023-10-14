@@ -17,7 +17,20 @@
 #include "board.h"
 #include "userInput.h"
 #include "direction.h"
+#include "random.h"
 #include <iostream>
+
+namespace Setup
+{
+    constexpr std::size_t minMoves{ 10 };
+    constexpr std::size_t maxMoves{ 100 };
+
+    void puzzleToSolve(Board& board)
+    {
+        for (std::size_t i{}; i < Random::get(minMoves, maxMoves); ++i)
+            board.moveTile(getRandomDirection());
+    }
+}
 
 int main()
 {    
@@ -25,7 +38,8 @@ int main()
     // You cannot copy a singleton. (Not sure about move.)
     // Nevertheless, you can reference it.
     
-    std::cout << board;
+    Setup::puzzleToSolve(board);    
+    std::cout << board;    
     do
     {                
         try
@@ -44,7 +58,7 @@ int main()
             return 0;
         }
 
-    } while (not board.gameOver());
+    } while (not gameOver(board));
 
     std::cout << "\n\nYou Won!!\n\n";
     return 0;

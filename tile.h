@@ -67,7 +67,7 @@ public:
      * @return true: If the tile displays the "correct number"
      * @return false 
      */
-    bool inCorrectPosition() const;
+    bool isCorrectPosition() const;
 
     /**
      * @brief Swap two tiles.

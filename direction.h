@@ -44,12 +44,20 @@ inline const std::vector<Cell> directions{ {-1, 0}, {0, -1}, {1, 0}, {0, 1} };
 std::string_view getName(Direction dir);
 
 /**
- * @brief Return an unsinged int form of a given direction
+ * @brief Return an unsinged int form of a given direction.
  * 
  * @param dir: A \c Direction value 
  * @return std::size_t 
  */
 std::size_t operator+(Direction dir);
+
+/**
+ * @brief Return the opposite direction of a given direction.
+ * 
+ * @param dir 
+ * @return Direction 
+ */
+Direction operator-(Direction dir);
 
 /**
  * @brief Output the string form of \c dir
