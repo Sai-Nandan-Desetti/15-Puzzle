@@ -15,7 +15,7 @@ To play the game, run the `main.exe` file (on Windows)
   * `q`: quit
 
 ## Docs
-To view documentation of the code, see this repo's live [website](https://sai-nandan-desetti.github.io/15-Puzzle/).
+To view documentation of the code, see this repo's [website](https://sai-nandan-desetti.github.io/15-Puzzle/).
 
 ## Reference
 * This code is written as a project as described [here](https://www.learncpp.com/cpp-tutorial/chapter-21-project/).
