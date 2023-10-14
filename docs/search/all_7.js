@@ -11,6 +11,8 @@ var searchData=
   ['main_8',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]],
   ['main_2ecpp_9',['main.cpp',['../main_8cpp.html',1,'']]],
   ['max_5fdirections_10',['max_directions',['../direction_8h.html#a224b9163917ac32fc95a60d8c1eec3aaa1b1c170ad479a8ff67b991f41079e78e',1,'direction.h']]],
-  ['movetile_11',['moveTile',['../class_board.html#a1b31479b41929a229ef4303dcb191fed',1,'Board']]],
-  ['mt_12',['mt',['../namespace_random.html#aa4354db31fa7d64040939b905ab12ee1',1,'Random']]]
+  ['maxmoves_11',['maxMoves',['../namespace_setup.html#a077957becfcf388305e55764e49fbe9c',1,'Setup']]],
+  ['minmoves_12',['minMoves',['../namespace_setup.html#a2a28cc48256d5ccb04ee4b96ac5696b9',1,'Setup']]],
+  ['movetile_13',['moveTile',['../class_board.html#a1b31479b41929a229ef4303dcb191fed',1,'Board']]],
+  ['mt_14',['mt',['../namespace_random.html#aa4354db31fa7d64040939b905ab12ee1',1,'Random']]]
 ];

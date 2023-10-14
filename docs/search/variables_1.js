@@ -8,5 +8,7 @@ var searchData=
   ['m_5ftiles_5',['m_tiles',['../class_board.html#af8942a2ba75a892fcf3d27a10824a8f7',1,'Board']]],
   ['m_5fx_6',['m_x',['../class_point.html#a885daee8c5064cd51f6a4c3888091fc9',1,'Point']]],
   ['m_5fy_7',['m_y',['../class_point.html#a00e243381d01e186dc2fcc5d24b4d3be',1,'Point']]],
-  ['mt_8',['mt',['../namespace_random.html#aa4354db31fa7d64040939b905ab12ee1',1,'Random']]]
+  ['maxmoves_8',['maxMoves',['../namespace_setup.html#a077957becfcf388305e55764e49fbe9c',1,'Setup']]],
+  ['minmoves_9',['minMoves',['../namespace_setup.html#a2a28cc48256d5ccb04ee4b96ac5696b9',1,'Setup']]],
+  ['mt_10',['mt',['../namespace_random.html#aa4354db31fa7d64040939b905ab12ee1',1,'Random']]]
 ];

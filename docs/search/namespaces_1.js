@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['userinput_0',['UserInput',['../namespace_user_input.html',1,'']]]
+  ['setup_0',['Setup',['../namespace_setup.html',1,'']]]
 ];

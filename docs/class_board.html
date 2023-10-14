@@ -99,9 +99,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1b31479b41929a229ef4303dcb191fed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_board.html#a1b31479b41929a229ef4303dcb191fed">moveTile</a> (<a class="el" href="direction_8h.html#a224b9163917ac32fc95a60d8c1eec3aa">Direction</a> dir) noexcept</td></tr>
 <tr class="memdesc:a1b31479b41929a229ef4303dcb191fed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move the empty tile in the given direction.  <br /></td></tr>
 <tr class="separator:a1b31479b41929a229ef4303dcb191fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab41f02cc8fc2e07a089e6d320f2dc074"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_board.html#ab41f02cc8fc2e07a089e6d320f2dc074">gameOver</a> ()</td></tr>
-<tr class="memdesc:ab41f02cc8fc2e07a089e6d320f2dc074"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the game is over or not.  <br /></td></tr>
-<tr class="separator:ab41f02cc8fc2e07a089e6d320f2dc074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c4851a3d241cf00e969a2e8743d0bf2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_board.html#a9d911b4c56c18864f57311c4924f094e">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_board.html#a8c4851a3d241cf00e969a2e8743d0bf2">getNumberOfCorrectTiles</a> () const</td></tr>
+<tr class="separator:a8c4851a3d241cf00e969a2e8743d0bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -155,6 +154,9 @@ Static Private Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
+<tr class="memitem:a315ff1f86101a49b8910887e2fc8d018"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_board.html#a315ff1f86101a49b8910887e2fc8d018">gameOver</a> (<a class="el" href="class_board.html">Board</a> &amp;board)</td></tr>
+<tr class="memdesc:a315ff1f86101a49b8910887e2fc8d018"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the game is over or not.  <br /></td></tr>
+<tr class="separator:a315ff1f86101a49b8910887e2fc8d018"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0dded66091bf0ae162ef5d9f49c6c01"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_board.html#af0dded66091bf0ae162ef5d9f49c6c01">operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="class_board.html">Board</a> &amp;board)</td></tr>
 <tr class="memdesc:af0dded66091bf0ae162ef5d9f49c6c01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the <code>board</code>.  <br /></td></tr>
 <tr class="separator:af0dded66091bf0ae162ef5d9f49c6c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -437,19 +439,46 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="ab41f02cc8fc2e07a089e6d320f2dc074" name="ab41f02cc8fc2e07a089e6d320f2dc074"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab41f02cc8fc2e07a089e6d320f2dc074">&#9670;&#160;</a></span>gameOver()</h2>
+<a id="a8c4851a3d241cf00e969a2e8743d0bf2" name="a8c4851a3d241cf00e969a2e8743d0bf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c4851a3d241cf00e969a2e8743d0bf2">&#9670;&#160;</a></span>getNumberOfCorrectTiles()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Board::gameOver </td>
+          <td class="memname"><a class="el" href="class_board.html#a9d911b4c56c18864f57311c4924f094e">Board::Size</a> Board::getNumberOfCorrectTiles </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Symbol Documentation</h2>
+<a id="a315ff1f86101a49b8910887e2fc8d018" name="a315ff1f86101a49b8910887e2fc8d018"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a315ff1f86101a49b8910887e2fc8d018">&#9670;&#160;</a></span>gameOver</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gameOver </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_board.html">Board</a> &amp;&#160;</td>
+          <td class="paramname"><em>board</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Check if the game is over or not. </p>
@@ -459,7 +488,6 @@ false </dd></dl>
 
 </div>
 </div>
-<h2 class="groupheader">Friends And Related Symbol Documentation</h2>
 <a id="af0dded66091bf0ae162ef5d9f49c6c01" name="af0dded66091bf0ae162ef5d9f49c6c01"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af0dded66091bf0ae162ef5d9f49c6c01">&#9670;&#160;</a></span>operator&lt;&lt;</h2>
 

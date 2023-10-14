@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>15 Puzzle: board.cpp File Reference</title>
+<title>15 Puzzle: Setup Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -70,30 +70,33 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">board.cpp File Reference</div></div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Setup Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="board_8h_source.html">board.h</a>&quot;</code><br />
-<code>#include &lt;stdexcept&gt;</code><br />
-<code>#include &lt;utility&gt;</code><br />
-</div><table class="memberdecls">
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a315ff1f86101a49b8910887e2fc8d018"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="board_8cpp.html#a315ff1f86101a49b8910887e2fc8d018">gameOver</a> (<a class="el" href="class_board.html">Board</a> &amp;board)</td></tr>
-<tr class="separator:a315ff1f86101a49b8910887e2fc8d018"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0dded66091bf0ae162ef5d9f49c6c01"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="board_8cpp.html#af0dded66091bf0ae162ef5d9f49c6c01">operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="class_board.html">Board</a> &amp;board)</td></tr>
-<tr class="separator:af0dded66091bf0ae162ef5d9f49c6c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2bf415ab92db8daaece2487fa0612c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_setup.html#ab2bf415ab92db8daaece2487fa0612c6">puzzleToSolve</a> (<a class="el" href="class_board.html">Board</a> &amp;board)</td></tr>
+<tr class="separator:ab2bf415ab92db8daaece2487fa0612c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a2a28cc48256d5ccb04ee4b96ac5696b9"><td class="memItemLeft" align="right" valign="top">constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_setup.html#a2a28cc48256d5ccb04ee4b96ac5696b9">minMoves</a> { 10 }</td></tr>
+<tr class="separator:a2a28cc48256d5ccb04ee4b96ac5696b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a077957becfcf388305e55764e49fbe9c"><td class="memItemLeft" align="right" valign="top">constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_setup.html#a077957becfcf388305e55764e49fbe9c">maxMoves</a> { 100 }</td></tr>
+<tr class="separator:a077957becfcf388305e55764e49fbe9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a315ff1f86101a49b8910887e2fc8d018" name="a315ff1f86101a49b8910887e2fc8d018"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a315ff1f86101a49b8910887e2fc8d018">&#9670;&#160;</a></span>gameOver()</h2>
+<a id="ab2bf415ab92db8daaece2487fa0612c6" name="ab2bf415ab92db8daaece2487fa0612c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2bf415ab92db8daaece2487fa0612c6">&#9670;&#160;</a></span>puzzleToSolve()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool gameOver </td>
+          <td class="memname">void Setup::puzzleToSolve </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_board.html">Board</a> &amp;&#160;</td>
           <td class="paramname"><em>board</em></td><td>)</td>
@@ -101,45 +104,51 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>true: If the number of correct tiles equals the size of the board. </dd>
-<dd>
-false </dd></dl>
 
 </div>
 </div>
-<a id="af0dded66091bf0ae162ef5d9f49c6c01" name="af0dded66091bf0ae162ef5d9f49c6c01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0dded66091bf0ae162ef5d9f49c6c01">&#9670;&#160;</a></span>operator&lt;&lt;()</h2>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a2a28cc48256d5ccb04ee4b96ac5696b9" name="a2a28cc48256d5ccb04ee4b96ac5696b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a28cc48256d5ccb04ee4b96ac5696b9">&#9670;&#160;</a></span>minMoves</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>out</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="class_board.html">Board</a> &amp;&#160;</td>
-          <td class="paramname"><em>board</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">constexpr std::size_t Setup::minMoves { 10 }</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>First clear the screen, so that the board always appears on top. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">out</td><td></td></tr>
-    <tr><td class="paramname">board</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>std::ostream&amp; </dd></dl>
+
+</div>
+</div>
+<a id="a077957becfcf388305e55764e49fbe9c" name="a077957becfcf388305e55764e49fbe9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a077957becfcf388305e55764e49fbe9c">&#9670;&#160;</a></span>maxMoves</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::size_t Setup::maxMoves { 100 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
